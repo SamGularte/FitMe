@@ -1,3 +1,6 @@
+# FitMe
+This project was carried out as a challenge from Compass uol and was made with React ts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
