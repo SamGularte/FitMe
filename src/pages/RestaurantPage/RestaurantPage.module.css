@@ -1,0 +1,285 @@
+.restaurantHeader {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem 8%;
+  background-color: #202020;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.restaurantHeaderImgCont {
+  height: 17rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.restaurantHeaderImgCont .restaurantHeaderImgContImg {
+  height: 100%;
+}
+
+.restaurantHeaderResName {
+  font-size: 2rem;
+}
+
+.restaurantHeaderResLocation {
+  margin-top: -1rem;
+}
+
+.restaurantHeaderResLilBoxes {
+  display: flex;
+  gap: 3rem;
+}
+
+.restaurantHeaderResStar {
+  height: 1rem;
+}
+
+.restaurantHeaderResStar img {
+  height: 100%;
+  margin-right: 0.4rem;
+}
+
+.restaurantHeaderWhiteBars {
+  padding: 0 3rem;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.restaurantHeaderOffbox {
+  display: flex;
+  align-items: flex-end;
+}
+
+.restaurantHeaderOffers {
+  border: 2px dashed #fc8019;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.restaurantHeaderOffersTIttle {
+  font-size: 2rem;
+  color: #fc8019;
+  margin: 0;
+}
+
+.restaurantHeaderOffers p {
+  height: 1.2rem;
+  font-size: 1rem;
+}
+
+.restaurantHeaderOffers p img {
+  height: 100%;
+}
+
+.restaurantContent {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.restaurantContentOptions {
+  padding-right: 3rem;
+  border-right: 1px solid #808080;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.restaurantContentOptionsDish {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 2rem;
+}
+
+.restaurantContentOptionsDishPrice {
+  font-weight: 600;
+}
+
+.restaurantContentOptionsDishImg {
+  height: 10rem;
+  width: 10rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.restaurantContentOptionsDishImg img {
+  height: 100%;
+}
+
+.restaurantContentOptionsDishAddBtn {
+  border: none;
+  background-color: #fff;
+  color: #1ac84b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  right: -104.3%;
+}
+
+.restaurantContentCart {
+  width: 20rem;
+}
+
+.restaurantContentCartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurantContentCartTittle {
+  font-size: 1.6rem;
+}
+
+.restaurantContentCartempty {
+  text-align: center;
+}
+
+.restaurantContentCarResConatiner {
+  margin-top: 2rem;
+}
+
+.restaurantContentCarprice {
+  margin-top: -0.5rem;
+  color: #808080;
+}
+
+.restaurantContentCarResName {
+  color: #fc8019;
+}
+
+.restaurantContentCardishLCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurantContentCardishName {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.restaurantContentCarCounter {
+  font-size: 1.5rem;
+}
+
+.restaurantContentCarFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantContentCarSubtotal {
+  font-size: 1.5rem;
+}
+
+.restaurantContentCarExtra {
+  margin-top: -1.2rem;
+  color: #808080;
+}
+
+.restaurantContentCartButton {
+  background-color: #fc8019;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  width: 20rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 84em) {
+  .restaurantHeader {
+    padding: 2rem 6%;
+  }
+
+  .restaurantContent {
+    grid-template-columns: 0.8fr 2.2fr 1fr;
+  }
+}
+
+@media (max-width: 75em) {
+  .restaurantHeader {
+    padding: 2rem 4%;
+  }
+
+  .restaurantContent {
+    grid-template-columns: 0.6fr 2.4fr 1fr;
+  }
+}
+
+@media (max-width: 59em) {
+  .restaurantHeader {
+    padding: 2rem 2%;
+  }
+
+  .restaurantContent {
+    grid-template-columns: 0.5fr 2.5fr 1fr;
+  }
+}
+
+@media (max-width: 44em) {
+  .restaurantHeader {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .restaurantHeaderOffbox {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .restaurantContent {
+    grid-template-columns: 0.8fr 2.2fr;
+  }
+
+  .restaurantContentCart {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 34em) {
+  .restaurantHeader {
+    padding: 0;
+  }
+}
+
+@media (max-width: 31em) {
+  .restaurantHeaderImgCont {
+    width: 100vw;
+  }
+
+  .restaurantHeaderImgCont .restaurantHeaderImgContImg {
+    width: 100%;
+    height: auto;
+  }
+  .restaurantHeaderImgCont {
+    flex-direction: column;
+    height: 17rem;
+  }
+
+  .restaurantHeaderOffbox {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .restaurantHeaderOffbox {
+    margin-top: 65vw;
+  }
+
+  .restaurantContent {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurantContentOptions {
+    border: none;
+    border-bottom: 1px solid #808080;
+  }
+
+  .restaurantContentOptions {
+    display: flex;
+    justify-content: space-around;
+  }
+}
