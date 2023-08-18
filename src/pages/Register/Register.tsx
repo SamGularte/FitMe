@@ -14,12 +14,13 @@ import { useBoolContext } from "../../context/BoolContext";
 
 type Props = {};
 
-function containsOnlyLetters(str: string): boolean {
-  return /^[A-Za-z]+$/.test(str);
-}
-
-function containsOnlyNumbers(str: string): boolean {
-  return /^[0-9]+$/.test(str);
+export function containsOnlyLetters(str: string): boolean {
+  if (/^[A-Za-z]+$/.test(str)) {
+    return true;
+  } else {
+    return false;
+  }
+  return false;
 }
 
 const Register = (props: Props) => {
@@ -36,10 +37,6 @@ const Register = (props: Props) => {
   const { booleanValue, setBooleanValue } = useBoolContext();
 
   setBooleanValue(false);
-
-  const containsOnlyLetters = (str: string) => {
-    return /^[A-Za-z]+$/.test(str);
-  };
 
   const containsOnlyNumbers = (str: string) => {
     return /^[0-9]+$/.test(str);
@@ -77,7 +74,6 @@ const Register = (props: Props) => {
         "X-Parse-Application-Id": "DSiIkHz2MVbCZutKS7abtgrRVsiLNNGcs0L7VsNL",
         "X-Parse-Master-Key": "0cpnqkSUKVkIDlQrNxameA6OmjxmrA72tsUMqVG9",
         "X-Parse-Client-Key": "zXOqJ2k44R6xQqqlpPuizAr3rs58RhHXfU7Aj20V",
-        "X-Parse-Revocable-Session": "1",
         "Content-Type": "application/json",
       };
 

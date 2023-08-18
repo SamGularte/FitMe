@@ -24,33 +24,35 @@ const Login = (props: Props) => {
 
   const { booleanValue, setBooleanValue } = useBoolContext();
 
+  const [responsed, setResponse] = useState<string>("");
+
   setBooleanValue(false);
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post(`${apiUrl}/login`, null, {
-        headers: {
-          "X-Parse-Application-Id": "DSiIkHz2MVbCZutKS7abtgrRVsiLNNGcs0L7VsNL",
-          "X-Parse-Master-Key": "0cpnqkSUKVkIDlQrNxameA6OmjxmrA72tsUMqVG9",
-          "X-Parse-Client-Key": "zXOqJ2k44R6xQqqlpPuizAr3rs58RhHXfU7Aj20V",
-          "X-Parse-Revocable-Session": "1",
-        },
-        params: {
+      const response = await axios.post(
+        "https://parseapi.back4app.com/login",
+        {
           username,
           password,
         },
-      });
+        {
+          headers: {
+            "X-Parse-Application-Id":
+              "DSiIkHz2MVbCZutKS7abtgrRVsiLNNGcs0L7VsNL",
+            "X-Parse-Master-Key": "0cpnqkSUKVkIDlQrNxameA6OmjxmrA72tsUMqVG9",
+            "X-Parse-Client-Key": "zXOqJ2k44R6xQqqlpPuizAr3rs58RhHXfU7Aj20V",
+            "X-Parse-Revocable-Session": "1",
+          },
+        }
+      );
+      navigate("/");
 
-      if (response.status === 200) {
-        console.log("API Response:", response.data);
-
-        setTimeout(() => {
-          navigate("/");
-        }, 2000);
-      } else {
-      }
+      console.log("Login successful", response.data);
+      // Faça algo com a resposta, como redirecionar o usuário ou atualizar o estado global de autenticação.
     } catch (error) {
-      console.error("Authentication Error:", error);
+      console.error("Login failed", error);
+      // Lida com erros de autenticação, como exibir uma mensagem de erro para o usuário.
     }
   };
 
