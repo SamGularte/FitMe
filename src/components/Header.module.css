@@ -1,0 +1,115 @@
+.headerContainer {
+  padding: 3% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  width: 8rem;
+}
+
+.logoContainer img {
+  width: 100%;
+}
+
+.restContainer {
+  display: flex;
+  align-items: center;
+}
+
+.searchContainer {
+  padding: 1rem 2rem;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+.searchContainer input,
+.searchContainer button {
+  border: none;
+}
+
+.searchContainer input {
+  width: 20rem;
+}
+
+.searchContainer input::placeholder {
+  font-size: 1rem;
+}
+
+.searchContainer button {
+  cursor: pointer;
+  width: 1rem;
+}
+
+.searchContainer button img {
+  width: 100%;
+}
+
+.bagIcon {
+  text-decoration: none;
+  width: 2rem;
+  margin-left: 1.5rem;
+}
+
+.bagIcon img {
+  width: 100%;
+}
+
+.signButton {
+  text-decoration: none;
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 84em) {
+  .headerContainer {
+    padding: 3% 7%;
+  }
+}
+
+@media (max-width: 75em) {
+  .headerContainer {
+    padding: 3% 6%;
+  }
+}
+
+@media (max-width: 59em) {
+  .headerContainer {
+    padding: 3% 4%;
+  }
+}
+
+@media (max-width: 44em) {
+  .headerContainer {
+    padding: 3% 2%;
+  }
+
+  .searchContainer input {
+    width: 15rem;
+  }
+
+  .searchContainer input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .signButton {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .headerContainer {
+    justify-content: center;
+  }
+
+  .logoContainer {
+    display: none;
+  }
+}

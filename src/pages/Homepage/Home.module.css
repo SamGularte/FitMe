@@ -1,0 +1,224 @@
+.homeHero {
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  min-height: 40rem;
+  overflow: hidden;
+  margin: 5rem 0 10rem 0;
+  align-items: center;
+}
+
+.homeHeroParagraphTitle {
+  font-size: 3rem;
+}
+
+.homeHeroParagraphTitleWI {
+  font-size: 3rem;
+  display: flex;
+}
+
+.homeHeroParagraphTitleWI div {
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+
+  border-radius: 2rem;
+}
+
+.bananaContainer {
+  display: flex;
+  background-color: #ffedd0;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.appleContainer {
+  background-color: #ffd0d0;
+  margin: 0 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.homeHeroParagraphTitleWI div img {
+  height: 70%;
+}
+
+.homeHeroParagraph {
+  font: 1.4rem;
+  color: #404040;
+  padding-right: 10rem;
+}
+
+.orange {
+  color: #fc8019;
+}
+
+.homeHeroImgs {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.homeHeroImg1 {
+  height: 100%;
+}
+
+.homeHeroImg2 {
+  height: 70%;
+  margin-left: 3rem;
+}
+
+.homeContainer {
+  padding: 0% 8%;
+  margin-bottom: 6rem;
+}
+
+.restaurantsTittle {
+  font-size: 1.5rem;
+  color: #202020;
+}
+
+.restaurantsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.restaurantLink {
+  text-decoration: none;
+}
+
+@media (max-width: 84em) {
+  .homeHero {
+    padding: 0 7%;
+  }
+}
+
+@media (max-width: 70em) {
+  .homeHero {
+    padding: 0 6%;
+  }
+
+  .homeContainer {
+    padding: 0% 3%;
+  }
+}
+
+@media (max-width: 59em) {
+  .homeHero {
+    padding: 0 4%;
+  }
+
+  .restaurantsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .homeContainer {
+    padding: 0% 10%;
+  }
+}
+
+@media (max-width: 52em) {
+  .homeHero {
+    grid-template-columns: 1.5fr 0.5fr;
+    padding: 0 1%;
+  }
+}
+
+@media (max-width: 50em) {
+  .homeContainer {
+    padding: 0% 4%;
+  }
+}
+
+@media (max-width: 46em) {
+  .homeHero {
+    grid-template-columns: 1fr;
+    padding: 0% 8%;
+  }
+
+  .homeHeroParagraphTitle {
+    font-size: 3.5rem;
+  }
+
+  .homeHeroParagraphTitleWI {
+    font-size: 3.5rem;
+  }
+
+  .homeHeroParagraph {
+    font: 1.8rem;
+  }
+
+  .homeHeroImgs {
+    grid-row: 1;
+  }
+
+  .homeHeroImg2 {
+    display: none;
+  }
+
+  .homeHeroImgs {
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+
+  .homeHeroImg1 {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 40em) {
+  .homeHero {
+    padding: 0% 4%;
+  }
+
+  .restaurantsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .homeContainer {
+    padding: 0% 10%;
+  }
+}
+
+@media (max-width: 34em) {
+  .homeHero {
+    padding: 0% 2%;
+  }
+
+  .homeContainer {
+    padding: 0% 5%;
+  }
+}
+
+@media (max-width: 28em) {
+  .homeContainer {
+    padding: 0% 3%;
+  }
+}
+
+@media (max-width: 27em) {
+  .restaurantsContainer {
+    grid-template-columns: 1fr;
+    margin: 0 50%;
+  }
+
+  .homeHeroParagraphTitle {
+    font-size: 2.5rem;
+  }
+
+  .homeHeroParagraphTitleWI {
+    font-size: 2.5rem;
+  }
+
+  .homeHeroParagraphTitleWI div {
+    width: 4rem;
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+}
